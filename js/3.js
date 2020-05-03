@@ -12,7 +12,7 @@ var config = {
   firebase.initializeApp(config);
 var db = firebase.database();
 var dbRef = db.ref("/");
-var gamess = dbRef.child("182153/games/1");
+var gamess = dbRef.child("182153/games/3");
 
 // MENDAPATKAN SALAH SATU DIRECTORY GAMES BERDASARKAN ID
  gamess.on("value", snap =>{
